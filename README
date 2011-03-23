@@ -1,0 +1,15 @@
+This is the git repository for sharing ongoing work on the TERMS paper on HD168443: Genady, Mahadevan, Kane et al. 2011
+
+Initial creation of Repository
+Next steps:
+
+  mkdir HD168443
+  cd HD168443
+  git init
+  touch README
+  git add README
+  git commit -m 'first commit'
+  git remote add origin git@github.com:suvrath/HD168443.git
+  git push -u origin master
+     ≈
+
