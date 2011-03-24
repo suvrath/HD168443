@@ -11,5 +11,9 @@ Next steps:
   git commit -m 'first commit'
   git remote add origin git@github.com:suvrath/HD168443.git
   git push -u origin master
+
+
+To clone a copy of the existing repository
+git clone  git://github.com/suvrath/HD168443.git
      ≈
 
