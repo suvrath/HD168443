@@ -26,7 +26,6 @@
   Diana Dragomir\altaffilmark{5},
   Debra Fischer\altaffilmark{6},
   Gregory W. Henry\altaffilmark{7},
-  Eric Jensen\altaffilmark{8},
   Greg Laughlin\altaffilmark{9},
   Markus Rabus\altaffilmark{10},
   Jason Wright\altaffilmark{1}
@@ -48,8 +47,6 @@
 \altaffiltext{7}{Center of Excellence in Information Systems, Tennessee
   State University, 3500 John A. Merritt Blvd., Box 9501, Nashville,
   TN 37209}
-\altaffiltext{8}{Dept of Physics \& Astronomy, Swarthmore College,
-  Swarthmore, PA 19081}
 \altaffiltext{9}{UCO/Lick Observatory, University of California, Santa
   Cruz, CA 95064}
 \altaffiltext{10}{Departamento de Astonom\'ia y Astrof\'isica,
@@ -108,22 +105,74 @@ HD~168443b
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Photometric Stability}
-\label{sec:photo}
+\section{Hipparchos Photometry of HD168443}
+The Hipparchos mission observed the brightest stars in the sky over many epochs. \citet{Robichon00} and \citet{Castellano00} detected the transit of HD209458b in the Hipparchos epoch photometry, and \citet{Hebrard06} were able to detect multiple transits of HD189733b, leading to a significant improvement in the determination of its period.  Hipparchos photometry has therefore been demonstrated to be precise enought to detect the transit of a Jupiter radii planet around stars fainter than HD168443 (V=6.92).  Figure \ref{fig:hip} shows the Hipparchos photometry and phasing on the known period for HD209458 and for the period we derived from long term radial velocity monitoring in section \ref{ephemeris} for HD168443. We follow the prescription of \citet{Robichon00} to create the phased plot. A long period planet, like HD168443b, has a significantly smaller probablilty (than a few day period hot Jupiter) of a Hipparchos observational epoch corresponding to a transit. 
+
+\begin{figure}[h]
+  \includegraphics[angle=90,width=8.2cm]{HipparcosCheck}
+  \caption{Hipparchos Photometry}
+  \label{fig:hip}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Monitoring the Transit Window}
+\subsection{CTIO Photometry}
+\label{sec:photometry}
 
+Since the PSF of the stars within each frame were non-gaussian in
+shape, aperture photometry was used to measure each of the stars of
+interest. For each star, a small part of the image ($\pm$~100 pixels
+from the estimated center) was extracted from the frame. Estimates of
+the extent of the PSF with suitable values for sky radii were then
+passed to the photometry code for analysis. Due to the extreme
+defocussing and stable guiding of the telescope, we found the
+photometry to be relatively robust against the choice of these values.
 
-\section{Hipparchos Photometry of HD168443}
+As mentioned in Section \ref{sec:observing}, observing conditions on
+the night of the transit window (2009 September 3) were not optimal
+and plagued with thin cirrus. We were unfortunately unable to utilise
+the bright reference stars in the alternate fields due to these
+variable conditions. The difficulties imposed for this photometry thus
+became dominated by the lack of bright reference stars within the 20
+arcmin FOV. We selected the brightest four reference stars in the
+frame which were $\sim 5$ magnitudes fainter than the target. Relative
+photometry was performed using the methods described in \citet{eve01}.
 
-\begin{figure}[h]
-  \includegraphics[angle=90,width=8.2cm]{HipparcosCheck}
-  \caption{Hipparchos Photometry}
-  \label{fig:phot}
+\begin{figure}
+ % \includegraphics[angle=270,width=8.2cm]{f03a.ps}
+  %\includegraphics[angle=270,width=8.2cm]{f03b.ps}
+  %\includegraphics[angle=270,width=8.2cm]{f03c.ps}
+  \caption{CTIO photometry of HD~156846. Top: Data from 2009 September
+    3 calibrated with four reference stars in the field, in which
+    cloud effects are still present. Middle: Data from 2009 September
+    3 calibrated with only the brightest reference star, corrected
+    for airmass, and sigma-clipped. Bottom: For comparison, data from
+    2009 September 9 using the same bright reference star and
+    sigma-clipped, but no airmass correction is needed.}
+  \label{fig:phot1}
 \end{figure}
+
+Shown in the top panel of Figure \ref{fig:phot1} is the lightcurve of
+HD~156846 from the night of the transit window, calibrated using the
+faint reference stars. The dip in the middle of the lightcurve is due
+to cloud effects which are also present in the lightcurves of the
+reference stars. The upward trend in the lightcurve is due to the
+increasing airmass as the target was observed until it set. It was
+found that only using the brightest reference star produced an
+improved result in correcting for cloud effects. The lightcurve shown
+in the middle panel of Figure \ref{fig:phot1} uses the brightest
+reference star for calibration. A power law was applied to correct for
+airmass, and a sigma-clip was performed to remove significant
+outliers. The 1$\sigma$ scatter of the measurements in this panel is
+slightly less than 1\%. For comparison, we show a lightcurve in the
+bottom panel from the night of 2009 September 9 during which
+conditions were significantly improved. This lightcurve uses the same
+reference star but no airmass correction was needed or used. The
+scatter is half that of the night of the transit window.
+
+\subsection{APT Photometry}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Conclusions}
@@ -151,6 +200,13 @@ have been possible.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{thebibliography}{}
+\bibitem[Castellano et al.(2000)]{Castellano00} Castellano, T., 
+Jenkins, J., Trilling, D.~E., Doyle, L., \& Koch, D.\ 2000, \apjl, 532, L51 
+\bibitem[H{\'e}brard 
+\& Lecavelier Des Etangs(2006)]{Hebrard06} H{\'e}brard, G., \& Lecavelier Des Etangs, A.\ 2006, \aap, 445, 341 
+\bibitem[Robichon \& Arenou(2000)]{Robichon00} Robichon, N., \& Arenou, F.\ 2000, \aap, 355, 295 
+
+
 
 \bibitem[\protect\citeauthoryear{Bakos et al.}{2004}]{bak04} Bakos,
   G., Noyes, R.W., Kov\'acs, G., Stanek, K.Z., Sasselov, D.D., Domsa,
